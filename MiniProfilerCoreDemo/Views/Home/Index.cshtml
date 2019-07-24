@@ -1,0 +1,44 @@
+﻿@model List<MiniProfilerCoreDemo.Models.Entities.User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">System Account Users</h1>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div class="table-responsive">
+            @if (Model.Any())
+            {
+                <table class="table table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>UserName</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.UserName</td>
+                                <td>@item.Password</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Sorry!</strong> There isn't any users in systems.
+                </div>
+            }
+        </div>
+    </div>
+</div>
