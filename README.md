@@ -6,6 +6,7 @@
 
 针对ASP.NET Core MVC应用，使用MiniProfiler的优点是：它会把结果直接放在页面的左下角，随时可以点击查看；这样的话就可以感知出你的程序运行的怎么样；同时这也意味着，在你开发新功能的同时，可以很快速的得到反馈。
 
+
 ## 一、安装配置MiniProfiler
 
 在现有的ASP.NET Core MVC项目里，通过Nuget安装MiniProfiler ：
@@ -113,6 +114,7 @@
 
 ![](./imgs/03.png)
 
+
 ## 二、MiniProfiler 具体使用
 
 #### 分析局部代码
@@ -212,5 +214,11 @@
 
 ![](./imgs/07.png)
 
-## 三、案例源码：
+
+## 三、在WebApi项目里使用MiniProfiler
+
+#####  关于在WebApi项目里使用MiniProfiler的教程，请移步：[WEBAPI.md](./WEBAPI.md)
+
+
+## 四、案例源码：
 ##### [MiniProfilerCoreDemo](https://github.com/Run2948/MiniProfilerCoreDemo)
